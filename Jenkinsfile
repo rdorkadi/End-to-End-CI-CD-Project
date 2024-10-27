@@ -3,7 +3,7 @@ pipeline {
     docker 
     {
       image 'maven:3.8.5-openjdk-17'
-      args '--user jenkins -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
+      //args '--user jenkins -v /var/run/docker.sock:/var/run/docker.sock' // mount Docker socket to access the host's Docker daemon
     }
   }
     stages {
